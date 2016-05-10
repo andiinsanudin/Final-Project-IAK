@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Stock Hawk</string>
+
+    <string name="action_example">العمل سبيل المثال</string>
+
+    <string name="action_settings">إعدادات</string>
+    <string name="action_change_units">وحدات التغيير</string>
+    <string name="symbol_search">رمز البحث</string>
+    <string name="content_test">بحث عن الأوراق المالية رمز</string>
+    <string name="input_hint">FB</string>
+    <string name="input_prefill"></string>
+    <string name="network_toast">اه اوه! هذا التطبيق يتطلب اتصال بالإنترنت</string>
+    <string name="no_internet">لا يوجد اتصال إنترنت</string>
+    <string name="stock_not_found">لم يتم العثور على الأسهم مع هذا الرمز</string>
+    <string name="example_bid_price" translatable="false">1000.00</string>
+    <string name="example_bid_change" translatable="false">100%</string>
+    <string name="example_stock_symbol" translatable="false">GOOG</string>
+    <string name="new_stock">إضافة الأسهم الجديدة</string>
+    <string name="stock_is_saved">يتم حفظ هذه الأسهم بالفعل!</string>
+    <string name="appwidget_text">الأسهم الأسهم هوك</string>
+    <string name="add_widget">إضافة القطعة</string>
+</resources>
