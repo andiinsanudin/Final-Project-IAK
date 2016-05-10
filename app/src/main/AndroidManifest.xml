@@ -6,6 +6,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
         <uses-permission android:name="android.permission.INTERNET"/>
@@ -29,8 +30,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.LineGraphActivity"
-            android:screenOrientation="landscape"/>
+            android:name=".ui.LineGraphActivity"/>
 
         <service
             android:name="com.sam_chordas.android.stockhawk.service.StockTaskService"
@@ -40,12 +40,30 @@
                 <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
             </intent-filter>
         </service>
+
         <service android:name="com.sam_chordas.android.stockhawk.service.StockIntentService"/>
+
+        <service
+            android:name=".service.StockWidgetRemoteViewsService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_REMOTEVIEWS"/>
 
         <provider
             android:name="com.sam_chordas.android.stockhawk.data.generated.QuoteProvider"
             android:authorities="com.sam_chordas.android.stockhawk.data.QuoteProvider"
             android:exported="false"/>
+
+        <receiver android:name=".StockInfoWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/stock_info_widget_info"/>
+        </receiver>
+
     </application>
 
 </manifest>

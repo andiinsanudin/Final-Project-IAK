@@ -14,6 +14,7 @@ import android.widget.Toast;
 import com.google.android.gms.gcm.GcmNetworkManager;
 import com.google.android.gms.gcm.GcmTaskService;
 import com.google.android.gms.gcm.TaskParams;
+import com.sam_chordas.android.stockhawk.R;
 import com.sam_chordas.android.stockhawk.data.QuoteColumns;
 import com.sam_chordas.android.stockhawk.data.QuoteProvider;
 import com.sam_chordas.android.stockhawk.rest.Utils;
@@ -61,6 +62,7 @@ public class StockTaskService extends GcmTaskService {
 
     @Override
     public int onRunTask(TaskParams params) {
+
         Cursor initQueryCursor;
         if (mContext == null) {
             mContext = this;
@@ -138,11 +140,10 @@ public class StockTaskService extends GcmTaskService {
 
                             @Override
                             public void run() {
-                                Toast.makeText(mContext, "Stock with symbol " + stockInput + " in not found", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(mContext, mContext.getResources().getString(R.string.stock_not_found, stockInput), Toast.LENGTH_SHORT).show();
                             }
                         });
                     }
-
 
                 } catch (RemoteException | OperationApplicationException e) {
                     Log.e(LOG_TAG, "Error applying batch insert", e);

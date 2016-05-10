@@ -10,4 +10,13 @@
     <string name="input_hint">FB</string>
     <string name="input_prefill"></string>
     <string name="network_toast">Uh-oh! This app requires an internet connection</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="stock_not_found">Stock with symbol %1$s is not found</string>
+    <string name="example_bid_price" translatable="false">1000.00</string>
+    <string name="example_bid_change" translatable="false">100%</string>
+    <string name="example_stock_symbol" translatable="false">GOOG</string>
+    <string name="new_stock">Add new stock</string>
+    <string name="stock_is_saved">This stock is already saved!</string>
+    <string name="appwidget_text">Stock Hawk Stocks</string>
+    <string name="add_widget">Add widget</string>
 </resources>

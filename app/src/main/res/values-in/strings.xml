@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Stock Hawk</string>
+
+    <string name="action_example">Contoh Aksi</string>
+
+    <string name="action_settings">Pengaturan</string>
+    <string name="action_change_units">Ganti Unit</string>
+    <string name="symbol_search">Cari Simbol</string>
+    <string name="content_test">Cari Simbol Stok</string>
+    <string name="input_hint">FB</string>
+    <string name="input_prefill"></string>
+    <string name="network_toast">Uh-oh! Aplikasi ini membutuhkan akses interet</string>
+    <string name="no_internet">Tidak ada koneksi internet</string>
+    <string name="stock_not_found">Stok dengan simbol %1$s tidak ditemukan</string>
+    <string name="example_bid_price" translatable="false">1000.00</string>
+    <string name="example_bid_change" translatable="false">100%</string>
+    <string name="example_stock_symbol" translatable="false">GOOG</string>
+    <string name="new_stock">Tambah stock baru</string>
+    <string name="stock_is_saved">Stok ini sudah pernah ditambahkan!</string>
+    <string name="appwidget_text">Stok Stock Hawk</string>
+    <string name="add_widget">Tambah widget</string>
+</resources>
