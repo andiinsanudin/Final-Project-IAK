@@ -21,8 +21,7 @@ public class StockInfoWidget extends AppWidgetProvider {
         // Construct the RemoteViews object
         RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.stock_info_widget);
         views.setTextViewText(R.id.appwidget_text, widgetText);
-        views.setRemoteAdapter(R.id.widget_list,
-                new Intent(context, StockWidgetRemoteViewsService.class));
+        views.setRemoteAdapter(R.id.widget_list,  new Intent(context, StockWidgetRemoteViewsService.class));
 
         Intent appIntent = new Intent(context, MyStocksActivity.class);
         PendingIntent appPendingIntent = PendingIntent.getActivity(context, 0, appIntent, 0);
